@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestPokemon",
+            "request": "launch",
+            "mainClass": "pokemon.TestPokemon",
+            "projectName": "TD8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestExercices",
+            "request": "launch",
+            "mainClass": "services.TestExercices",
+            "projectName": "TD8"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LectureFichierAffichage",
+            "request": "launch",
+            "mainClass": "input.LectureFichierAffichage",
+            "projectName": "TD10"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Partie",
+            "request": "launch",
+            "mainClass": "pokemon.Partie",
+            "projectName": "TD10"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LectureFichierEcritureESP",
+            "request": "launch",
+            "mainClass": "input.LectureFichierEcritureESP",
+            "projectName": "TD10"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LectureFichier",
+            "request": "launch",
+            "mainClass": "input.LectureFichier",
+            "projectName": "TD10"
+        }
+    ]
+}
