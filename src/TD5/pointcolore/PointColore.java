@@ -48,7 +48,7 @@ public class PointColore extends Point {
     public boolean equals (Object obj)
     {
         Point p = (Point)obj;
-        if (super.x == p.x && super.y == p.y)
+        if (super.getX() == p.getX() && super.getY() == p.getY())
             return true;
         else return false;
     }
