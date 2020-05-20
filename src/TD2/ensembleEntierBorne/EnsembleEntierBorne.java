@@ -1,4 +1,4 @@
-package ensembleEntierBorne;
+package TD2.ensembleEntierBorne;
 
 public class EnsembleEntierBorne {
 

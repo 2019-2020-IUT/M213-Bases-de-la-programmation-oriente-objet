@@ -1,4 +1,4 @@
-package pokemon;
+package TD10.pokemon;
 
 import java.util.*;
 import java.lang.Math;

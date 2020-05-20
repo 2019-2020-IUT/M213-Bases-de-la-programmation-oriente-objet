@@ -1,4 +1,4 @@
-package tripletEntier;
+package TD2.tripletEntier;
 
 public class TestTripletEntier
 {

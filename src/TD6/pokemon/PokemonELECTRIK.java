@@ -1,4 +1,4 @@
-package pokemon;
+package TD6.pokemon;
 
 public class PokemonELECTRIK extends Pokemon {
 	private int nb_pattes;

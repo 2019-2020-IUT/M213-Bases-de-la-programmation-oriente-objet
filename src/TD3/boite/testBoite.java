@@ -1,4 +1,4 @@
-package boite;
+package TD3.boite;
 
 import java.awt.Color;
 

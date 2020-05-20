@@ -1,7 +1,7 @@
-package pointcolore;
+package TD5.pointcolore;
 
 import java.awt.Color;
-import point.Point;
+import TD1.point.Point;
 
 public class PointColore extends Point {
 

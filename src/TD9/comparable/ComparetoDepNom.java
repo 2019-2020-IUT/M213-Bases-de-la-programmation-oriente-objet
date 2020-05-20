@@ -1,4 +1,4 @@
-package comparable;
+package TD9.comparable;
 
 public class ComparetoDepNom /*implements comparator<Personne>*/ {
 

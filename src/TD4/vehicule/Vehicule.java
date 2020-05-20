@@ -1,4 +1,4 @@
-package vehicule;
+package TD4.vehicule;
 
 public class Vehicule {
 	protected String marque;

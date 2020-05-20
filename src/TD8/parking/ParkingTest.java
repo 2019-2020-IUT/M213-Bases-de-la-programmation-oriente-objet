@@ -1,11 +1,13 @@
-package parking;
+package TD8.parking;
 
+/*
 import java.util.HashMap;
-import vehicule.Voiture;
+import TD6.vehicule.Voiture;
+*/
 
 public class ParkingTest {
 	public static void main(String[] args) {
-		HashMap<Integer, Voiture> carpark = new HashMap<Integer, Voiture>();
+		/*HashMap<Integer, Voiture> carpark = new HashMap<Integer, Voiture>();
 		Voiture v1 = new Voiture("Peugeot", 2005, 13400.00, 1.4, 5, 4.0, 12000);
 		Voiture v2 = new Voiture("Porsche", 2010, 160000.00, 3.6, 2, 25.0, 8320);
 		Voiture v3 = new Voiture("Fiat", 1999, 8400.00, 1.2, 3, 5.0, 125000);
@@ -22,6 +24,6 @@ public class ParkingTest {
 		}catch(IllegalStateException e) {
 			System.out.println(e.getMessage());
 		}
-		P1.toString();
+		P1.toString();*/
 	}
 }

@@ -1,4 +1,4 @@
-package comparable;
+package TD9.comparable;
 
 public abstract class Personne implements Comparable<Personne>{
 

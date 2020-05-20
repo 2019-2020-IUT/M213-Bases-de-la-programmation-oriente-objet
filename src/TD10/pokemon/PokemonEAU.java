@@ -1,4 +1,4 @@
-package pokemon;
+package TD10.pokemon;
 
 public class PokemonEAU extends Pokemon{
 	private int nb_nageoires;

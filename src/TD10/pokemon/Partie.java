@@ -1,4 +1,4 @@
-package pokemon;
+package TD10.pokemon;
 
 import java.io.*;
 import java.util.*;

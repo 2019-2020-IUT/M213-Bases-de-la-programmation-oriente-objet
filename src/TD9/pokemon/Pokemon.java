@@ -1,4 +1,4 @@
-package pokemon;
+package TD9.pokemon;
 
 public abstract class Pokemon implements Comparable<Pokemon> {
 

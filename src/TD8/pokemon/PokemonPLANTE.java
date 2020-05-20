@@ -1,4 +1,4 @@
-package pokemon;
+package TD8.pokemon;
 
 public class PokemonPLANTE extends Pokemon{
 

@@ -1,5 +1,4 @@
-package input;
-
+package TD10.input;
 import java.io.*;
 
 public class LectureFichierEcriture {

@@ -1,4 +1,4 @@
-package fleuriste;
+package TD3.fleuriste;
 
 public class LotFleur {
 

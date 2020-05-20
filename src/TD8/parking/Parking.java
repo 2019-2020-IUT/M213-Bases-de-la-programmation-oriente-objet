@@ -1,5 +1,5 @@
-package parking;
-import vehicule.Voiture;
+package TD8.parking;
+import TD6.vehicule.Voiture;
 import java.util.HashMap;
 
 public class Parking {
@@ -16,7 +16,7 @@ public class Parking {
 		if(parking.get(place)==null) { 
 			parking.put(place, v);
 	}else { 
-		throw new IllegalStateException("Place occupé");
+		throw new IllegalStateException("Place occupï¿½");
 		}
 	}
 	public Voiture liberer(int place) throws IndexOutOfBoundsException{
@@ -25,14 +25,14 @@ public class Parking {
 		return voit;
 	}
 	public int chercher(Voiture v) throws IllegalStateException {
-		for (int i = 0; i < parking.size(); i++) {
+		for (int i = 0; i < parking.size();) {
 			if(parking.get(i).equals(v)) {
 				return i;
 			}else {
 				throw new IllegalStateException("Place inexistante");
 			}
 		}
-		System.out.println("Voiture non présente");
+		System.out.println("Voiture non prï¿½sente");
 		return 0;
 	}
 	

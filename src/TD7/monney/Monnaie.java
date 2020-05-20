@@ -1,4 +1,4 @@
-package monney;
+package TD7.monney;
 
 public class Monnaie {
 

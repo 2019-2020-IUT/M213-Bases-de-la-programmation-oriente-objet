@@ -1,4 +1,4 @@
-package ip;
+package TD7.ip;
 
 public class IP {
 	private String ip;

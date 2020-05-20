@@ -1,4 +1,4 @@
-package pokemon;
+package TD6.pokemon;
 
 enum Type {
 	

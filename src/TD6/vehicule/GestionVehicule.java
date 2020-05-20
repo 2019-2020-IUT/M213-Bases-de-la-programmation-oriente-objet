@@ -1,29 +1,18 @@
-package vehicule;
+package TD6.vehicule;
 
 import java.util.Calendar;
 
 public class GestionVehicule {
-	private static int ANNEE_ACTUELLE = Calendar.getInstance().get(Calendar.YEAR);
-		
-	public static void main(String[] args) {
-		Voiture[] garage = new Voiture[3];
-		Avion[] hangar = new Avion[2];
 
-		garage[0] = new Voiture("Peugeot", 2005, 13400.00, 1.4, 5, 4.0, 12000);
-		garage[1] = new Voiture("Porsche", 2010, 160000.00, 3.6, 2, 25.0, 8320);
-		garage[2] = new Voiture("Fiat", 1999, 8400.00, 1.2, 3, 5.0, 125000);
-
-		hangar[0] = new Avion("Cessna", 1979, 204739.90, "HELICES", 250);
-		hangar[1] = new Avion("Gulfstream", 1993, 4321098.00, "REACTION", 1300);
-
-		for (int i = 0; i < garage.length; i++) {
-			garage[i].calculePrix(ANNEE_ACTUELLE);
-			garage[i].affiche();
-		}
-
-		for (int i = 0; i < hangar.length; i++) {
-			hangar[i].calculePrix(ANNEE_ACTUELLE);
-			hangar[i].affiche();
-		}
+	public static void main (String [] args) {
+		Vehicule v1 = new Velo (17); // nb vitesses
+		Vehicule v2 = new Voiture (40.5, 5); // capacité réservoir, nb Places
+		Vehicule v3 = new Camion (100.0, 100.0); // capacité réservoir, volume
+		System.out.println ("Vehicules : "+"\n" +v1 +"\n" +v2 +"\n" +v3 +"\n");
+		/*
+		 * v2.approvisionner (35.0) ; // litres d’essence v3.approvisionner (70.0);
+		 * v1.transporter ("Dijon ", "Valence ") ; v2.transporter (5, 300) ;
+		 * v3.transporter (" des tuiles", 1000) ; }
+		 */
 	}
 }

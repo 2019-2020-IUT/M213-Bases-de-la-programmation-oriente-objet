@@ -1,4 +1,4 @@
-package pokemon;
+package TD5.pokemon;
 
 public class PokemonFEU extends Pokemon {
 	private int nb_pattes;

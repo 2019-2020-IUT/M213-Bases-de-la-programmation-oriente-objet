@@ -1,4 +1,4 @@
-package point;
+package TD1.point;
 
 import static org.junit.jupiter.api.Assertions.*;
 

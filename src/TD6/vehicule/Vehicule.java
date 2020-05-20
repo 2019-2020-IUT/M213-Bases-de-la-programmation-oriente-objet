@@ -1,32 +1,72 @@
-package vehicule;
+package TD6.vehicule;
 
 public abstract class Vehicule {
-	protected String marque;
-	protected int dateAchat;
-	protected double prixAchat;
-	protected double prixCourant;
-	
-	public Vehicule() {
-		marque = "";
-		dateAchat = 0;
-		prixAchat = 0;
-		prixCourant = 0;
-	}
-	
-	public Vehicule(String s, int d, double pA) {
-		this.marque = s;
-		dateAchat = d;
-		prixAchat = pA;
-		prixCourant = 0;
-	}
-	
-	public void calculPrix(int y) {
-		int previousY = this.dateAchat - y;
-		this.prixCourant = this.prixAchat - ((this.prixAchat/100) * previousY);
-	}
-	
-	public void affiche() {
-		System.out.println(""+this.marque+" "+this.dateAchat+" "+this.prixAchat+" "+prixCourant);
-	}
-	
+
+    private static int compteur = 0;
+    private int id;
+    private double distance;
+
+/*==========================================================Getter & Setters====================================================================*/
+    
+    /**
+     * @return the compteur
+     */
+    public static int getCompteur() {
+        return compteur;
+    }
+    
+    /**
+     * @return the distance
+     */
+    public double getDistance() {
+        return distance;
+    }
+    
+    /**
+     * @param distance the distance to set
+     */
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+    
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+    
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    /**
+     * @param compteur the compteur to set
+     */
+    public static void setCompteur(int compteur) {
+        Vehicule.compteur = compteur;
+    }
+    
+/*==============================================================================================================================================*/
+
+    public Vehicule() {
+        this.id = compteur;
+        compteur++;
+        distance = 0.;
+    }
+
+    @Override
+    public String toString() {
+        return "Le véhicule Numéro " + id + " a parcourru " + distance;
+    }
+
+    void rouler(double d) {
+        this.distance = d;
+    }
+
+
+
 }
