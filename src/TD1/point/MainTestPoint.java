@@ -67,7 +67,6 @@ public class MainTestPoint {
         System.out.println("J et I : " + J.equals(I));
         System.out.println("B et B : " + B.equals(B));
         System.out.println("C et C : " + C.equals(C));
-        
 
         A2.setLocation(5., 2.);
         B2.setLocation(3., -2.);
