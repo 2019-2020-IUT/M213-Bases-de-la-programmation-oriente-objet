@@ -1,5 +1,11 @@
 package TD1.point;
 
+/********************************************************************************************
+ * 		@author			JunkJumper															*
+ * 		@license		https://creativecommons.org/licenses/by/4.0/  License CC BY 4.0		*
+ * 		@since 			File available since 20/05/2020										*
+ ********************************************************************************************/
+
 public class MainTestPoint {
     public static void main(String[] args)
     {    
@@ -103,6 +109,7 @@ public class MainTestPoint {
         System.out.println("C3 : " + C3.toString());
         System.out.println("O3 : " + O3.toString());
 
+        
 
 
 

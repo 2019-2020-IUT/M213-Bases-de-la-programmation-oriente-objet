@@ -1,5 +1,11 @@
 package TD1.point;
 
+/********************************************************************************************
+ * 		@author			JunkJumper															*
+ * 		@license		https://creativecommons.org/licenses/by/4.0/  License CC BY 4.0		*
+ * 		@since 			File available since 20/05/2020										*
+ ********************************************************************************************/
+
 public class Point
 {
     private double x;
@@ -43,23 +49,15 @@ public class Point
     @Override
     public boolean equals(Object obj) {
         Point p = (Point)obj;
-        if (this.x == p.x && this.y == p.y) {
-        	return true;
-        } else { 
-        	return false;
-        }
+        return (this.x == p.x && this.y == p.y);
     }
     
     public Point clone() {
         return this;
     }
     
-    public void displayLocation() {
-    	System.out.println("x = " + this.getX() + " , y = " + this.getY() + ".");
-    }
-    
-    public Point getLocation() {
-    	return this;
+    public String displayLocation() {
+    	return "x = " + this.getX() + " , y = " + this.getY();
     }
     
     public void setLocation(Point p) {
