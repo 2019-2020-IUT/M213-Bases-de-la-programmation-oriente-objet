@@ -5,7 +5,7 @@ public class TestEnsembleEntierBorne {
 	public static void main(String[] args) {
 		EnsembleEntierBorne e1 = new EnsembleEntierBorne(20);
 		EnsembleEntierBorne e2 = new EnsembleEntierBorne(11);
-		EnsembleEntierBorne e3 = new EnsembleEntierBorne(5);
+		EnsembleEntierBorne e3 = new EnsembleEntierBorne(10);
 		
 		e1.add(3);
 		e1.add(5);
@@ -35,12 +35,16 @@ public class TestEnsembleEntierBorne {
 		e2.add(8);
 
 		e3.add(5);
+		e3.add(8);
 		e3.add(0);
 		e3.add(3);
 
 		System.out.println("e1 = " + e1.toString());
 		System.out.println("e2 = " + e2.toString());
 		System.out.println("e3 = " + e3.toString());
+		
+		System.out.println(e3.intersect(e2));
+		
 	}
 
 }
