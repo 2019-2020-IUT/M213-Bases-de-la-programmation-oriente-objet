@@ -2,70 +2,69 @@ package TD2.ensembleEntierBorne;
 
 public class EnsembleEntierBorne {
 
-    private final int MAXIMUM;
-    private boolean tab[];
+	private final int MAXIMUM;
+	private boolean tab[];
 
-    public EnsembleEntierBorne(int max)
-    {
-    	MAXIMUM = max;
-    	tab = new boolean[max+1];        
-    }
+	public EnsembleEntierBorne() {
+		this(0);
+	}
+	
+	public EnsembleEntierBorne(int max) {
+		this.MAXIMUM = max;
+		this.tab = new boolean[max + 1];
+		for(int i = 0; i < this.getMAXIMUM(); i++) {
+			this.setTabI(false, i);
+		}
+	}
 
-    public void add(int elt)
-    {
-        this.tab[elt] = true;
-    }
-    
-    public void remove(int elt)
-    {
-        this.tab[elt] = false;
-    }
+	public void add(int elt) {
+		this.setTabI(true, elt);
+	}
 
-    public boolean doesContains(int elt)
-    {
-        if (this.tab[elt] == true) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+	public void remove(int elt) {
+		this.setTabI(false, elt);
+	}
 
-	/*EnsembleEntierBorne intersect(EnsembleEntierBorne ens)
-    {
+	public boolean doesContains(int elt) {
+		return this.tab[elt];
+	}
 
-    }*/
-
+	public EnsembleEntierBorne intersect(EnsembleEntierBorne ens) {
+		EnsembleEntierBorne e = new EnsembleEntierBorne(Math.max(this.getMAXIMUM(), ens.getMAXIMUM()));
+		
+		for(int i=0; i < Math.min(this.getMAXIMUM(), ens.getMAXIMUM()); i++) {
+			e.setTabI(this.doesContains(i) && ens.doesContains(i), i);
+		}
+		return e;
+	}
+	 
 	public int getMAXIMUM() {
-		return MAXIMUM;
-    }   
-    
+		return this.MAXIMUM;
+	}
 
 	public boolean[] getTab() {
-		return tab;
-    }
-    
-	public void setTab(boolean tab[]) {
-		this.tab = tab;
+		return this.tab;
+	}
+	
+	public void setTab(boolean[] b) {
+		this.tab = b;
+	}
+
+	public void setTabI(boolean b, int i) {
+		this.tab[i] = b;
 	}
 
 	@Override
 	public String toString() {
-        
-        String retour = "{";
 
-        for (int i = 0; i < this.MAXIMUM; i++)
-        {
-            if (this.tab[i] == true)
-            {
-                retour += i+", ";
-            }
-        }
-        retour += "}";
-        return retour;
+		String s = "{";
+
+		for (int i = 0; i < this.getMAXIMUM(); i++) {
+			if (doesContains(i)) {
+				s += i + ", ";
+			}
+		}
+		return s.substring(0, s.length()-2) + "}";
 	}
-	
-	
-
-
 
 }
