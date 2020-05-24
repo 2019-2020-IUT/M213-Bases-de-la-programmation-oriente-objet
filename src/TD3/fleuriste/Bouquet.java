@@ -1,33 +1,37 @@
 package TD3.fleuriste;
 
 public class Bouquet {
-	private LotFleurs lot1;
-	private LotFleurs lot2; 
-	private LotFleurs lot3;
+	private LotFleur lot0;
+	private LotFleur lot1; 
+	private LotFleur lot2;
 	
-	public Bouquet(LotFleurs un, LotFleurs deux, LotFleurs trois) {
-		if (un.fleur.getNom() == deux.fleur.getNom() || un.fleur.getNom() == trois.fleur.getNom() || deux.fleur.getNom() == trois.fleur.getNom())
+	public Bouquet(LotFleur un, LotFleur deux, LotFleur trois) {
+		if (un.getFleur().getNom() == deux.getFleur().getNom() || un.getFleur().getNom() == trois.getFleur().getNom() || deux.getFleur().getNom() == trois.getFleur().getNom())
 			throw new RuntimeException("Même fleurs");
-		lot1 = un;
-		lot2 = deux;
-		lot3 = trois;
+		this.lot0 = un;
+		this.lot1 = deux;
+		this.lot2 = trois;
 	}
 	
 	public double prix() {
-		double prix = lot1.fleur.prix*lot1.nombre+lot2.fleur.prix*lot2.nombre+lot3.fleur.prix*lot3.nombre;
-		return prix += prix*15/100;
+		return (lot0.getPrix() + lot1.getPrix() + lot2.getPrix());
 	}
 
-	public LotFleurs getLot1() {
-		return lot1;
+	public LotFleur getLot0() {
+		return this.lot0;
+	}
+	
+	public LotFleur getLot1() {
+		return this.lot1;
 	}
 
-	public LotFleurs getLot2() {
-		return lot2;
+	public LotFleur getLot2() {
+		return this.lot2;
 	}
-
-	public LotFleurs getLot3() {
-		return lot3;
+	
+	@Override
+	public String toString() {
+		return "Le bouquet est composé de " + lot0.getQuantite() + " " + lot0.getFleur().getNom() + "s, " + lot1.getQuantite() + " " + lot1.getFleur().getNom() + "s et " + lot2.getQuantite() + " " + lot2.getFleur().getNom() + ". " + lot0.toString() + " " + lot1.toString() + " " + lot2.toString() + ". Le bouquet a donc un prix de " + this.prix();
 	}
 	
 }
