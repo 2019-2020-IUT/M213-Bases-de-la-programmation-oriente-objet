@@ -1,5 +1,11 @@
 package TD2.jourDeLaSemaine;
 
+/********************************************************************************************
+ * 		@author			JunkJumper															*
+ * 		@license		https://creativecommons.org/licenses/by/4.0/  License CC BY 4.0		*
+ * 		@since 			File available since 24/05/2020										*
+ ********************************************************************************************/
+
 public class JourSemaine {
 
 	public final String[] JOURS = {"lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"};

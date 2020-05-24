@@ -1,5 +1,11 @@
 package TD2.jourDeLaSemaine;
 
+/********************************************************************************************
+ * 		@author			JunkJumper															*
+ * 		@license		https://creativecommons.org/licenses/by/4.0/  License CC BY 4.0		*
+ * 		@since 			File available since 24/05/2020										*
+ ********************************************************************************************/
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
