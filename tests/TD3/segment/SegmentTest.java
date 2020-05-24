@@ -18,6 +18,7 @@ public class SegmentTest {
 
 	private Point un = new Point(3, 6);
 	private Point deux = new Point(1, 8);
+	
 	private Segment seg1 = new Segment(2, 4, 6, 3);
 	private Segment seg2 = new Segment(un, deux);
 	private Segment seg3 = new Segment(1, 6, un);
@@ -42,5 +43,17 @@ public class SegmentTest {
 		Segment s = new Segment();
 		s = (Segment) seg3.clone();
 		assertTrue(s.equals(seg3));
+	}
+	
+	@Test
+	public void testProjX() {
+		Segment s = new Segment(2, 0, 6, 0);
+		assertEquals(s, seg1.projX());
+	}
+	
+	@Test
+	public void testProjY() {
+		Segment s = new Segment(0, 4, 0, 3);
+		assertEquals(s, seg1.projY());
 	}
 }
