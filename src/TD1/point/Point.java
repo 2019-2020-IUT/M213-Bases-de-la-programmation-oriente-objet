@@ -52,8 +52,9 @@ public class Point
         return (this.x == p.x && this.y == p.y);
     }
     
-    public Point clone() {
-        return this;
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+    	return new Point(this.getX(), this.getY());
     }
     
     public String displayLocation() {

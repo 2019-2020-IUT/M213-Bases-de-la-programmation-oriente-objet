@@ -32,8 +32,8 @@ public class TestPoint {
 	}
 	
 	@Test
-	public void testClone() {
-		pT = p1.clone();
+	public void testClone() throws CloneNotSupportedException {
+		pT = (Point) p1.clone();
 		assertTrue(pT.equals(p1));
 	}	
 	
