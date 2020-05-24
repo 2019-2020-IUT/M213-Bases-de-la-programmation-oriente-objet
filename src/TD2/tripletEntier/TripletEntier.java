@@ -27,8 +27,23 @@ public class TripletEntier {
         return "" + this.unA + this.unB + this.unC;
     }
 
-    public void ajoutElement(int e) {
-        this.unA = e;
+    public void ajout1erElement(int e) {
+        this.setUnA(e);
+    }
+    
+    public void ajoutElement(int e, int pos) {
+    	switch (pos) {
+		case 1 :
+			this.ajout1erElement(e);
+			break;
+		case 2 :
+			this.setUnB(e);
+		case 3 :
+			this.setUnC(e);
+		default:
+			System.err.println("not correct position");
+			break;
+		}
     }
 
     public boolean contient(int e) {
@@ -48,5 +63,30 @@ public class TripletEntier {
         return "[" + this.unA + "," + this.unB + "," + this.unC +"]";
     }
 
+	public int getUnA() {
+		return unA;
+	}
+
+	public void setUnA(int unA) {
+		this.unA = unA;
+	}
+
+	public int getUnB() {
+		return unB;
+	}
+
+	public void setUnB(int unB) {
+		this.unB = unB;
+	}
+
+	public int getUnC() {
+		return unC;
+	}
+
+	public void setUnC(int unC) {
+		this.unC = unC;
+	}
+
+	
 }
 

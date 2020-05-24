@@ -4,8 +4,7 @@ public class TestTripletEntier
 {
     public static void main(String[] args)
     {
-
-		TripletEntier t1 = new TripletEntier(2, 2, 3);
+    	TripletEntier t1 = new TripletEntier(2, 2, 3);
         
         System.out.println("Somme "+t1+" = "+t1.somme());
 		System.out.println(t1.somme() == 7);
@@ -32,12 +31,12 @@ public class TestTripletEntier
 		System.out.println(t3.moyenne() == 1.666667);
 		System.out.println();
 		
-		/*
+		
 		t1.ajoutElement(5, 2);
 		System.out.println(t1);
 		t1.ajoutElement(5, 5);
 		t1.ajout1erElement(10);
 		System.out.println(t1);
-		*/
+		
 	}
 }

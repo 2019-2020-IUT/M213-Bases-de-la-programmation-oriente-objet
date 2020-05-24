@@ -1,9 +1,13 @@
 package TD2.tripletEntier;
 
+/********************************************************************************************
+ *         @author            JunkJumper                                                    *
+ *         @license        https://creativecommons.org/licenses/by/4.0/  License CC BY 4.0  *
+ *         @since             File available since 22/05/2020                               *
+ ********************************************************************************************/
+
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TestTriplet {
@@ -13,16 +17,6 @@ class TestTriplet {
 	private TripletEntier t3 = new TripletEntier(4, 5, 1);
 	private TripletEntier t4 = new TripletEntier(3, 5, 2);
 	private TripletEntier t5 = new TripletEntier(1, 2, 3);
-
-	@BeforeEach
-    public void avantTest() {
-        System.out.println("----------Debut Test-------------");
-    }
-	
-	@AfterEach
-    public void apresTest() {
-        System.out.println("-----------Fin Test-------------");
-	}
 	
 	@Test
 	void testSomme() {
@@ -40,10 +34,10 @@ class TestTriplet {
 	@Test
 	void testMoyenne() {
 		assertEquals(2., t5.moyenne(), 0.00000001);
-		assertEquals(3.33333333, t4.moyenne(), 0.00000001);
-		assertEquals(3.33333333, t3.moyenne(), 0.00000001);
-		assertEquals(3.33333333, t2.moyenne(), 0.00000001);
-		assertEquals(3.33333333, t1.moyenne(), 0.00000001);
+		assertEquals(3.3333332538604736, t4.moyenne(), 0.00000001);
+		assertEquals(3.3333332538604736, t3.moyenne(), 0.00000001);
+		assertEquals(3.3333332538604736, t2.moyenne(), 0.00000001);
+		assertEquals(3.3333332538604736, t1.moyenne(), 0.00000001);
 
 		System.out.println("Test des sommes Passe correctement !");	
 	}
@@ -63,11 +57,11 @@ class TestTriplet {
 
 	@Test
 	void testToSting() {
-		assertEquals("[a=4, b=3, c=3]", t1.toString());
-		assertEquals("[a=4, b=4, c=2]", t2.toString());
-		assertEquals("[a=4, b=5, c=1]", t3.toString());
-		assertEquals("[a=3, b=5, c=2]", t4.toString());
-		assertEquals("[a=1, b=2, c=3]", t5.toString());
+		assertEquals("[4,3,3]", t1.toString());
+		assertEquals("[4,4,2]", t2.toString());
+		assertEquals("[4,5,1]", t3.toString());
+		assertEquals("[3,5,2]", t4.toString());
+		assertEquals("[1,2,3]", t5.toString());
 
 		System.out.println("Test du toString Passe correctement !");		
 	}
