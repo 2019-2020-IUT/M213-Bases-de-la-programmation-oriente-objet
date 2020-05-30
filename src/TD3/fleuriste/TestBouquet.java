@@ -6,22 +6,21 @@ public class TestBouquet {
 		Fleur tulipe = new Fleur("tulipe",0.4);
 		Fleur oeillet = new Fleur("oeillet",1.8);
 		
-		LotFleurs lotroses = new LotFleurs(rose,5);
-		LotFleurs lottulipes = new LotFleurs(tulipe,7);
-		LotFleurs lotoeillets = new LotFleurs(oeillet,3);
+		LotFleur lotroses = new LotFleur(rose,5);
+		LotFleur lottulipes = new LotFleur(tulipe,7);
+		LotFleur lotoeillets = new LotFleur(oeillet,3);
 		
 		Bouquet b = new Bouquet(lotroses, lottulipes, lotoeillets);
-		double prixb = b.prix(); //calcule le prix d�un bouquet
-		System.out.println(b+" : "+prixb+" euros");
+		System.out.println(b.toString());
 		
 		Stock magasin = new Stock(rose,tulipe,oeillet);
-		System.out.println(magasin);
-		magasin.ajouteRose(100);
-		magasin.ajouteTulipe(150);
-		magasin.ajouteOeillet(200);
-		System.out.println(magasin);
+		System.out.println(magasin.toString());
+		magasin.ajouteFleur(rose, 100);
+		magasin.ajouteFleur(tulipe, 150);
+		magasin.ajouteFleur(oeillet, 200);
+		System.out.println(magasin.toString());
 		// Est-ce que le stock permet de produire le bouquet b ?
 		boolean orderBouquet = magasin.bouquetFaisable(b);
-		System.out.println(orderBouquet);
+		System.out.println("Est-ce que le stock permet de produire le bouquet ? " + orderBouquet);
 	}
 }

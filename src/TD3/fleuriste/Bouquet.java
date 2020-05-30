@@ -31,7 +31,7 @@ public class Bouquet {
 	
 	@Override
 	public String toString() {
-		return "Le bouquet est composé de " + lot0.getQuantite() + " " + lot0.getFleur().getNom() + "s, " + lot1.getQuantite() + " " + lot1.getFleur().getNom() + "s et " + lot2.getQuantite() + " " + lot2.getFleur().getNom() + ". " + lot0.toString() + " " + lot1.toString() + " " + lot2.toString() + ". Le bouquet a donc un prix de " + this.prix();
+		return "Le bouquet est composé de " + lot0.getQuantite() + " " + lot0.getFleur().getNom() + "s, " + lot1.getQuantite() + " " + lot1.getFleur().getNom() + "s et " + lot2.getQuantite() + " " + lot2.getFleur().getNom() + ". " + lot0.toString() + " " + lot1.toString() + " " + lot2.toString() + ". Le bouquet a donc un prix de " + this.prix() + "€.";
 	}
 	
 }
